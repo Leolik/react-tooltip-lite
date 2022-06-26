@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 import Tooltip from '../src/index';
 
@@ -394,4 +394,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('react-root'));
+const root = ReactDOM.createRoot(document.getElementById('react-root'));
+
+root.render(<App />);
