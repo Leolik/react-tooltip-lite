@@ -3,6 +3,7 @@ declare module 'react-tooltip-lite' {
   import * as React from 'react';
 
   export interface TooltipProps {
+    children?: React.ReactNode;
     arrow?: boolean;
     arrowSize?: number;
     background?: string;
